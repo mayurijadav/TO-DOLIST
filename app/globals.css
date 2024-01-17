@@ -1,0 +1,52 @@
+.maincontiner {
+  border: solid black 2px;
+  margin: auto;
+  width: 600px;
+  background: aquamarine;
+}
+.row1{
+  border: solid blue 1px;
+  background-color: blue;
+  text-align: center;
+  height: 5%;
+  margin-top: 10px;
+  width: 100%;
+ 
+   
+}
+.input{
+  border: solid black 1px;
+  background-color: orchid;
+  text-align: center;
+  font-style: inherit;
+  margin-left:150px;
+  height: 20px;
+  width: 200px;
+  margin-top: 10px;
+  color:white;
+}
+.buten{
+  background-color: red;
+  height: 23px;
+  width: 40px;
+  margin-top: 10px;
+}
+.container1{
+   border: salmon red 2px;
+   margin: auto;
+   width: 600px;
+  
+}
+.list{
+  border: solid black 1px;
+}
+.todo-style{
+  border-radius: solod black 1px;
+}
+.AddedItem{
+  border: solid blue 1px;
+}
+.delete{
+  border: solid yellow 1px;
+  float:right;
+}

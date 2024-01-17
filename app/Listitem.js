@@ -16,7 +16,18 @@ function Listitem(){
         });
         setInputList("");
 
-    }
+    };  
+    const Deleteitem=(id)=>{
+        console.log("deleted");
+
+        setNewItem((oldItems)=>{
+            return oldItems.filter((arrElem,index)=>{
+                return index!==id;
+            })
+        })
+         
+    };
+
 return(
     <>
         <div className='continer continer1 '>
@@ -27,8 +38,13 @@ return(
 
           <ol className="list">
             {/* <li>{inputList}</li> */}
-            {newItem.map((itemvalue)=>{
-                return <ToDoList text={itemvalue}/>
+            {newItem.map((itemvalue , index)=>{
+                return <ToDoList 
+                key={index} 
+                id={index}
+                text={itemvalue}  
+                onSelect={Deleteitem}
+                />
                     
                 })}
           </ol>

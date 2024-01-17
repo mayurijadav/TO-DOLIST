@@ -1,17 +1,13 @@
 import React, { useState } from "react";
 
 function ToDoList(props){
-    // const [Delete setDeleteItem]= useState();
-    
-    const Deleteitem=()=>{
-        console.log("deleted");
-    }
-
 return (
     <>
         <div className="todo-style"> 
             <li className="AddedItem">{props.text}
-            <button className="delete" onClick={Deleteitem}>Delete</button>
+            <button className="delete" onClick={()=>{
+                props.onSelect(props.id)
+            }}>Delete</button>
             </li>
              
         </div>
